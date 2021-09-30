@@ -1,0 +1,95 @@
+@import "/src/breakpoints.scss";
+
+.dashboard {
+  background: #e5e5e5;
+}
+
+.wrapper {
+  padding: 20px;
+  line-height: 160%;
+  color: #343434;
+
+  @include for-size(md) {
+    padding: 30px 50px;
+  }
+
+  @include for-size(lg) {
+    padding: 30px 150px;
+  }
+}
+
+.content {
+  height: 235px;
+  background: #ffffff;
+  position: relative;
+  display: flex;
+  padding-right: 90px;
+
+  @include for-size(lg) {
+    padding: 0;
+  }
+}
+
+.yellowShape {
+  height: 150px;
+  margin-top: 35px;
+  margin-left: -38px;
+  position: absolute;
+  top: -40px;
+  right: 18px;
+  height: 76px;
+
+  @include for-size(md) {
+    position: unset;
+    height: unset;
+  }
+}
+
+.studentWrapper {
+  margin-top: 42px;
+  margin-left: 30px;
+
+  img {
+    margin-bottom: 15px;
+  }
+}
+
+.meetingImg {
+  margin-right: 116px;
+  margin-top: 43px;
+  height: 173px;
+  margin-left: 70px;
+  display: none;
+
+  @include for-size(lg) {
+    display: block;
+  }
+}
+
+.purpleCirclesImg {
+  display: block;
+  margin: 40px auto 20px;
+
+  @include for-size(lg) {
+    margin: 40px auto 45px;
+  }
+}
+
+.footer {
+  padding: 20px 0;
+  height: 60px;
+  background: #ffffff;
+  line-height: 160%;
+  color: #343434;
+  text-align: center;
+  font-size: 12px;
+
+  @include for-size(lg) {
+    font-size: inherit;
+  }
+}
+
+.teacherMode {
+  background: #ffffff;
+  opacity: 0.8;
+}

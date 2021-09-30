@@ -1,0 +1,103 @@
+.ReactModal__Body--open {
+  overflow: hidden;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background-color: rgba(32, 14, 100, 0.8);
+}
+
+.modalWrapper {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 120%;
+  color: #ffffff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .btnCloseImg {
+    position: absolute;
+    height: 51px;
+    width: 51px;
+    left: 500px;
+    top: -26px;
+    cursor: pointer;
+  }
+
+  img {
+    width: 223px;
+    height: 76px;
+    margin-bottom: 48px;
+  }
+}
+
+.eyeIconWrapper {
+  position: relative;
+  .eyeIcon {
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    top: 22px;
+    right: 16px;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  line-height: 191.68%;
+  color: #ffffff;
+  input:first-of-type {
+    margin-bottom: 15px;
+  }
+
+  label {
+    font-family: Open Sans, sans-serif;
+    font-size: 16px;
+  }
+
+  input {
+    margin-top: 5px;
+    font-family: Open Sans, sans-serif;
+    font-size: 14px;
+    width: 445px;
+    height: 56px;
+    left: 483px;
+    top: 385px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: #ffffff;
+    padding: 15px 20px;
+
+    &:focus {
+      border-color: #dadada;
+      outline: #dadada;
+    }
+  }
+
+  button {
+    background: #ffd74f;
+    box-shadow: 1px 3px 11px -3px rgb(255 231 150 / 45%);
+    border-radius: 4px;
+    border: none;
+    padding: 15px 45px;
+    font-weight: bold;
+    color: #6f48ec;
+    cursor: pointer;
+    width: 132.52px;
+    height: 48px;
+    margin-top: 27px;
+    align-self: flex-end;
+  }
+}

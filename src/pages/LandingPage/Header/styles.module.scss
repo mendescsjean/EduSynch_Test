@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  margin-top: 40px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    background: #ffd74f;
+    box-shadow: 1px 3px 11px -3px rgb(255 231 150 / 45%);
+    border-radius: 4px;
+    height: 48px;
+    border: none;
+    padding: 15px 45px;
+    font-weight: bold;
+    color: #6f48ec;
+    cursor: pointer;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    width: 170px;
+    z-index: 1;
+    margin-left: 500px;
+  }
+}
+
+.listWrapper {
+  display: flex;
+
+  &__logoImg {
+    height: 23px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 40px;
+    margin-left: 80px;
+    list-style: none;
+
+    li {
+      cursor: pointer;
+    }
+  }
+}

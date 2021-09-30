@@ -1,0 +1,117 @@
+@import "/src/breakpoints.scss";
+
+.header {
+  background: #7a57fd;
+  box-shadow: 4px 2px 14px rgba(0, 0, 0, 0.05);
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+
+  @include for-size(md) {
+    padding: 15px 50px;
+  }
+
+  @include for-size(lg) {
+    padding: 15px 155px 15px 66px;
+  }
+
+  span {
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    cursor: pointer;
+  }
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 18px;
+  margin-right: 48px;
+  margin-left: 22px;
+  cursor: pointer;
+}
+
+.avatarContainer {
+  display: flex;
+  align-items: center;
+
+  button {
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 11px;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    height: 34px;
+    padding: 10px 20px;
+    background-color: rgba(32, 14, 100, 0.3);
+    border: none;
+    margin-right: 28px;
+    font-family: inherit;
+    cursor: pointer;
+  }
+
+  img {
+    cursor: pointer;
+  }
+}
+
+.showMd {
+  display: block;
+
+  @include for-size(md) {
+    display: none;
+  }
+}
+
+.hideMd {
+  display: none;
+
+  @include for-size(md) {
+    display: block;
+  }
+}
+
+.chevron {
+  margin-right: 10px;
+  display: block;
+
+  @include for-size(md) {
+    display: none;
+  }
+}
+
+.teacherMode {
+  background-color: #ffffff;
+  height: 58px;
+  box-shadow: 0px 32px 60px rgb(84 95 122 / 8%);
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #7a57fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 30px;
+  gap: 100px;
+
+  @include for-size(md) {
+    display: none;
+  }
+}
+
+.arrowRightImg {
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
